@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18D5E5C13E8197300B7649A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5B13E8197300B7649A /* UIKit.framework */; };
+		C18D5E5E13E8197300B7649A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5D13E8197300B7649A /* Foundation.framework */; };
+		C18D5E6013E8197300B7649A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5F13E8197300B7649A /* CoreGraphics.framework */; };
+		C18D5E6613E8197300B7649A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E6413E8197300B7649A /* InfoPlist.strings */; };
+		C18D5E6813E8197300B7649A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E6713E8197300B7649A /* main.m */; };
+		C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */; };
+		C18D5E6F13E8197300B7649A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */; };
+		C18D5E7213E8197300B7649A /* Kurzovni_ListekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */; };
+		C18D5E7A13E8197300B7649A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E7913E8197300B7649A /* SenTestingKit.framework */; };
+		C18D5E7B13E8197300B7649A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5B13E8197300B7649A /* UIKit.framework */; };
+		C18D5E7C13E8197300B7649A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5D13E8197300B7649A /* Foundation.framework */; };
+		C18D5E7D13E8197300B7649A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5F13E8197300B7649A /* CoreGraphics.framework */; };
+		C18D5E8513E8197300B7649A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E8313E8197300B7649A /* InfoPlist.strings */; };
+		C18D5E8713E8197300B7649A /* Kurzovni_ListekTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */; };
+		C18D5E8913E8197300B7649A /* Kurzovni_ListekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C18D5E7E13E8197300B7649A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18D5E4E13E8197300B7649A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18D5E5613E8197300B7649A;
+			remoteInfo = "Kurzovni Listek";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C18D5E5713E8197300B7649A /* Kurzovni Listek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kurzovni Listek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18D5E5B13E8197300B7649A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C18D5E5D13E8197300B7649A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C18D5E5F13E8197300B7649A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C18D5E6313E8197300B7649A /* Kurzovni Listek-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kurzovni Listek-Info.plist"; sourceTree = "<group>"; };
+		C18D5E6513E8197300B7649A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C18D5E6713E8197300B7649A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C18D5E6913E8197300B7649A /* Kurzovni Listek-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kurzovni Listek-Prefix.pch"; sourceTree = "<group>"; };
+		C18D5E6A13E8197300B7649A /* Kurzovni_ListekAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekAppDelegate.h; sourceTree = "<group>"; };
+		C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekAppDelegate.m; sourceTree = "<group>"; };
+		C18D5E6E13E8197300B7649A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C18D5E7013E8197300B7649A /* Kurzovni_ListekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekViewController.h; sourceTree = "<group>"; };
+		C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekViewController.m; sourceTree = "<group>"; };
+		C18D5E7813E8197300B7649A /* Kurzovni ListekTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kurzovni ListekTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18D5E7913E8197300B7649A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C18D5E8213E8197300B7649A /* Kurzovni ListekTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kurzovni ListekTests-Info.plist"; sourceTree = "<group>"; };
+		C18D5E8413E8197300B7649A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekTests.h; sourceTree = "<group>"; };
+		C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C18D5E5413E8197300B7649A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E5C13E8197300B7649A /* UIKit.framework in Frameworks */,
+				C18D5E5E13E8197300B7649A /* Foundation.framework in Frameworks */,
+				C18D5E6013E8197300B7649A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D5E7413E8197300B7649A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E7A13E8197300B7649A /* SenTestingKit.framework in Frameworks */,
+				C18D5E7B13E8197300B7649A /* UIKit.framework in Frameworks */,
+				C18D5E7C13E8197300B7649A /* Foundation.framework in Frameworks */,
+				C18D5E7D13E8197300B7649A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C18D5E4C13E8197300B7649A = {
+			isa = PBXGroup;
+			children = (
+				C18D5E6113E8197300B7649A /* Kurzovni Listek */,
+				C18D5E8013E8197300B7649A /* Kurzovni ListekTests */,
+				C18D5E5A13E8197300B7649A /* Frameworks */,
+				C18D5E5813E8197300B7649A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C18D5E5813E8197300B7649A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E5713E8197300B7649A /* Kurzovni Listek.app */,
+				C18D5E7813E8197300B7649A /* Kurzovni ListekTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18D5E5A13E8197300B7649A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E5B13E8197300B7649A /* UIKit.framework */,
+				C18D5E5D13E8197300B7649A /* Foundation.framework */,
+				C18D5E5F13E8197300B7649A /* CoreGraphics.framework */,
+				C18D5E7913E8197300B7649A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C18D5E6113E8197300B7649A /* Kurzovni Listek */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E6A13E8197300B7649A /* Kurzovni_ListekAppDelegate.h */,
+				C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */,
+				C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */,
+				C18D5E7013E8197300B7649A /* Kurzovni_ListekViewController.h */,
+				C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */,
+				C18D5E6213E8197300B7649A /* Supporting Files */,
+			);
+			path = "Kurzovni Listek";
+			sourceTree = "<group>";
+		};
+		C18D5E6213E8197300B7649A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E6313E8197300B7649A /* Kurzovni Listek-Info.plist */,
+				C18D5E6413E8197300B7649A /* InfoPlist.strings */,
+				C18D5E6713E8197300B7649A /* main.m */,
+				C18D5E6913E8197300B7649A /* Kurzovni Listek-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C18D5E8013E8197300B7649A /* Kurzovni ListekTests */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */,
+				C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */,
+				C18D5E8113E8197300B7649A /* Supporting Files */,
+			);
+			path = "Kurzovni ListekTests";
+			sourceTree = "<group>";
+		};
+		C18D5E8113E8197300B7649A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C18D5E8213E8197300B7649A /* Kurzovni ListekTests-Info.plist */,
+				C18D5E8313E8197300B7649A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C18D5E5613E8197300B7649A /* Kurzovni Listek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D5E8C13E8197300B7649A /* Build configuration list for PBXNativeTarget "Kurzovni Listek" */;
+			buildPhases = (
+				C18D5E5313E8197300B7649A /* Sources */,
+				C18D5E5413E8197300B7649A /* Frameworks */,
+				C18D5E5513E8197300B7649A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kurzovni Listek";
+			productName = "Kurzovni Listek";
+			productReference = C18D5E5713E8197300B7649A /* Kurzovni Listek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C18D5E7713E8197300B7649A /* Kurzovni ListekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18D5E8F13E8197300B7649A /* Build configuration list for PBXNativeTarget "Kurzovni ListekTests" */;
+			buildPhases = (
+				C18D5E7313E8197300B7649A /* Sources */,
+				C18D5E7413E8197300B7649A /* Frameworks */,
+				C18D5E7513E8197300B7649A /* Resources */,
+				C18D5E7613E8197300B7649A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18D5E7F13E8197300B7649A /* PBXTargetDependency */,
+			);
+			name = "Kurzovni ListekTests";
+			productName = "Kurzovni ListekTests";
+			productReference = C18D5E7813E8197300B7649A /* Kurzovni ListekTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C18D5E4E13E8197300B7649A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C18D5E5113E8197300B7649A /* Build configuration list for PBXProject "Kurzovni Listek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C18D5E4C13E8197300B7649A;
+			productRefGroup = C18D5E5813E8197300B7649A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C18D5E5613E8197300B7649A /* Kurzovni Listek */,
+				C18D5E7713E8197300B7649A /* Kurzovni ListekTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C18D5E5513E8197300B7649A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E6613E8197300B7649A /* InfoPlist.strings in Resources */,
+				C18D5E6F13E8197300B7649A /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D5E7513E8197300B7649A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E8513E8197300B7649A /* InfoPlist.strings in Resources */,
+				C18D5E8713E8197300B7649A /* Kurzovni_ListekTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C18D5E7613E8197300B7649A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C18D5E5313E8197300B7649A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E6813E8197300B7649A /* main.m in Sources */,
+				C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */,
+				C18D5E7213E8197300B7649A /* Kurzovni_ListekViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18D5E7313E8197300B7649A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18D5E8913E8197300B7649A /* Kurzovni_ListekTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C18D5E7F13E8197300B7649A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18D5E5613E8197300B7649A /* Kurzovni Listek */;
+			targetProxy = C18D5E7E13E8197300B7649A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C18D5E6413E8197300B7649A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18D5E6513E8197300B7649A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18D5E6E13E8197300B7649A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		C18D5E8313E8197300B7649A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18D5E8413E8197300B7649A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C18D5E8A13E8197300B7649A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C18D5E8B13E8197300B7649A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C18D5E8D13E8197300B7649A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";
+				INFOPLIST_FILE = "Kurzovni Listek/Kurzovni Listek-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C18D5E8E13E8197300B7649A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";
+				INFOPLIST_FILE = "Kurzovni Listek/Kurzovni Listek-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C18D5E9013E8197300B7649A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kurzovni Listek.app/Kurzovni Listek";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";
+				INFOPLIST_FILE = "Kurzovni ListekTests/Kurzovni ListekTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C18D5E9113E8197300B7649A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kurzovni Listek.app/Kurzovni Listek";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";
+				INFOPLIST_FILE = "Kurzovni ListekTests/Kurzovni ListekTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C18D5E5113E8197300B7649A /* Build configuration list for PBXProject "Kurzovni Listek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D5E8A13E8197300B7649A /* Debug */,
+				C18D5E8B13E8197300B7649A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18D5E8C13E8197300B7649A /* Build configuration list for PBXNativeTarget "Kurzovni Listek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D5E8D13E8197300B7649A /* Debug */,
+				C18D5E8E13E8197300B7649A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C18D5E8F13E8197300B7649A /* Build configuration list for PBXNativeTarget "Kurzovni ListekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D5E9013E8197300B7649A /* Debug */,
+				C18D5E9113E8197300B7649A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C18D5E4E13E8197300B7649A /* Project object */;
+}
