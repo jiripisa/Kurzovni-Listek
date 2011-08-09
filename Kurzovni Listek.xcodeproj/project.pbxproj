@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15FF7F613E84E06001B0601 /* libRestKitJSONParserJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7EA13E82C70001B0601 /* libRestKitJSONParserJSONKit.a */; };
+		C15FF7F713E84E06001B0601 /* libRestKitNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7DE13E82C70001B0601 /* libRestKitNetwork.a */; };
+		C15FF7F813E84E06001B0601 /* libRestKitObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7E013E82C70001B0601 /* libRestKitObjectMapping.a */; };
+		C15FF7F913E84E06001B0601 /* libRestKitSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7E213E82C70001B0601 /* libRestKitSupport.a */; };
+		C15FF7FA13E84E06001B0601 /* libRestKitXMLParserLibxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7EC13E82C70001B0601 /* libRestKitXMLParserLibxml.a */; };
+		C15FF7FF13E84E06001B0601 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7FB13E84E06001B0601 /* CFNetwork.framework */; };
+		C15FF80013E84E06001B0601 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7FC13E84E06001B0601 /* libxml2.dylib */; };
+		C15FF80113E84E06001B0601 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7FD13E84E06001B0601 /* MobileCoreServices.framework */; };
+		C15FF80213E84E06001B0601 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7FE13E84E06001B0601 /* SystemConfiguration.framework */; };
 		C18D5E5C13E8197300B7649A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5B13E8197300B7649A /* UIKit.framework */; };
 		C18D5E5E13E8197300B7649A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5D13E8197300B7649A /* Foundation.framework */; };
 		C18D5E6013E8197300B7649A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5F13E8197300B7649A /* CoreGraphics.framework */; };
@@ -22,9 +31,94 @@
 		C18D5E8513E8197300B7649A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E8313E8197300B7649A /* InfoPlist.strings */; };
 		C18D5E8713E8197300B7649A /* Kurzovni_ListekTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */; };
 		C18D5E8913E8197300B7649A /* Kurzovni_ListekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */; };
+		C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C19E260713F0232D00EFDC6F /* ERTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C15FF7DD13E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A07FC1255161B00976E89;
+			remoteInfo = RestKitNetwork;
+		};
+		C15FF7DF13E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A08031255162C00976E89;
+			remoteInfo = RestKitObjectMapping;
+		};
+		C15FF7E113E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A080C12551D3000976E89;
+			remoteInfo = RestKitSupport;
+		};
+		C15FF7E313E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20808DBD13DE8CDC000A156A;
+			remoteInfo = "RestKitJSONParser+NXJSON";
+		};
+		C15FF7E513E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2590E64F125231F600531FA8;
+			remoteInfo = "RestKitJSONParser+YAJL";
+		};
+		C15FF7E713E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2590E66B1252353700531FA8;
+			remoteInfo = "RestKitJSONParser+SBJSON";
+		};
+		C15FF7E913E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 73057FD11331AD2E001908EE;
+			remoteInfo = "RestKitJSONParser+JSONKit";
+		};
+		C15FF7EB13E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25BD43BD1340315800DBACDD;
+			remoteInfo = "RestKitXMLParser+Libxml";
+		};
+		C15FF7ED13E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253A081412551D5300976E89;
+			remoteInfo = RestKitCoreData;
+		};
+		C15FF7EF13E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2523360511E79F090048F9B4;
+			remoteInfo = RestKitThree20;
+		};
+		C15FF7F113E82C70001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F6C39A510FE5C95008F47C5;
+			remoteInfo = UISpec;
+		};
+		C15FF7F413E84D39001B0601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 255B7588133BABBF00ED76AD;
+			remoteInfo = RestKit;
+		};
 		C18D5E7E13E8197300B7649A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C18D5E4E13E8197300B7649A /* Project object */;
@@ -35,6 +129,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		C15FF7FB13E84E06001B0601 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C15FF7FC13E84E06001B0601 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C15FF7FD13E84E06001B0601 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C15FF7FE13E84E06001B0601 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C18D5E5713E8197300B7649A /* Kurzovni Listek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kurzovni Listek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18D5E5B13E8197300B7649A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C18D5E5D13E8197300B7649A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +153,8 @@
 		C18D5E8413E8197300B7649A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekTests.h; sourceTree = "<group>"; };
 		C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekTests.m; sourceTree = "<group>"; };
+		C19E260613F0232D00EFDC6F /* ERTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERTableViewCell.h; sourceTree = "<group>"; };
+		C19E260713F0232D00EFDC6F /* ERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +162,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15FF7FF13E84E06001B0601 /* CFNetwork.framework in Frameworks */,
+				C15FF80013E84E06001B0601 /* libxml2.dylib in Frameworks */,
+				C15FF80113E84E06001B0601 /* MobileCoreServices.framework in Frameworks */,
+				C15FF80213E84E06001B0601 /* SystemConfiguration.framework in Frameworks */,
+				C15FF7F613E84E06001B0601 /* libRestKitJSONParserJSONKit.a in Frameworks */,
+				C15FF7F713E84E06001B0601 /* libRestKitNetwork.a in Frameworks */,
+				C15FF7F813E84E06001B0601 /* libRestKitObjectMapping.a in Frameworks */,
+				C15FF7F913E84E06001B0601 /* libRestKitSupport.a in Frameworks */,
+				C15FF7FA13E84E06001B0601 /* libRestKitXMLParserLibxml.a in Frameworks */,
 				C18D5E5C13E8197300B7649A /* UIKit.framework in Frameworks */,
 				C18D5E5E13E8197300B7649A /* Foundation.framework in Frameworks */,
 				C18D5E6013E8197300B7649A /* CoreGraphics.framework in Frameworks */,
@@ -81,9 +191,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C15FF7CA13E82C70001B0601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15FF7DE13E82C70001B0601 /* libRestKitNetwork.a */,
+				C15FF7E013E82C70001B0601 /* libRestKitObjectMapping.a */,
+				C15FF7E213E82C70001B0601 /* libRestKitSupport.a */,
+				C15FF7E413E82C70001B0601 /* libRestKitJSONParser+NXJSON.a */,
+				C15FF7E613E82C70001B0601 /* libRestKitJSONParserYAJL.a */,
+				C15FF7E813E82C70001B0601 /* libRestKitJSONParserSBJSON.a */,
+				C15FF7EA13E82C70001B0601 /* libRestKitJSONParserJSONKit.a */,
+				C15FF7EC13E82C70001B0601 /* libRestKitXMLParserLibxml.a */,
+				C15FF7EE13E82C70001B0601 /* libRestKitCoreData.a */,
+				C15FF7F013E82C70001B0601 /* libRestKitThree20.a */,
+				C15FF7F213E82C70001B0601 /* UISpec.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C18D5E4C13E8197300B7649A = {
 			isa = PBXGroup;
 			children = (
+				C15FF7FB13E84E06001B0601 /* CFNetwork.framework */,
+				C15FF7FC13E84E06001B0601 /* libxml2.dylib */,
+				C15FF7FD13E84E06001B0601 /* MobileCoreServices.framework */,
+				C15FF7FE13E84E06001B0601 /* SystemConfiguration.framework */,
+				C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */,
 				C18D5E6113E8197300B7649A /* Kurzovni Listek */,
 				C18D5E8013E8197300B7649A /* Kurzovni ListekTests */,
 				C18D5E5A13E8197300B7649A /* Frameworks */,
@@ -119,6 +252,8 @@
 				C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */,
 				C18D5E7013E8197300B7649A /* Kurzovni_ListekViewController.h */,
 				C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */,
+				C19E260613F0232D00EFDC6F /* ERTableViewCell.h */,
+				C19E260713F0232D00EFDC6F /* ERTableViewCell.m */,
 				C18D5E6213E8197300B7649A /* Supporting Files */,
 			);
 			path = "Kurzovni Listek";
@@ -168,6 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C15FF7F513E84D39001B0601 /* PBXTargetDependency */,
 			);
 			name = "Kurzovni Listek";
 			productName = "Kurzovni Listek";
@@ -198,6 +334,10 @@
 /* Begin PBXProject section */
 		C18D5E4E13E8197300B7649A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "TopMonks AG";
+			};
 			buildConfigurationList = C18D5E5113E8197300B7649A /* Build configuration list for PBXProject "Kurzovni Listek" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -208,6 +348,12 @@
 			mainGroup = C18D5E4C13E8197300B7649A;
 			productRefGroup = C18D5E5813E8197300B7649A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C15FF7CA13E82C70001B0601 /* Products */;
+					ProjectRef = C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C18D5E5613E8197300B7649A /* Kurzovni Listek */,
@@ -215,6 +361,87 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C15FF7DE13E82C70001B0601 /* libRestKitNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitNetwork.a;
+			remoteRef = C15FF7DD13E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7E013E82C70001B0601 /* libRestKitObjectMapping.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitObjectMapping.a;
+			remoteRef = C15FF7DF13E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7E213E82C70001B0601 /* libRestKitSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitSupport.a;
+			remoteRef = C15FF7E113E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7E413E82C70001B0601 /* libRestKitJSONParser+NXJSON.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "libRestKitJSONParser+NXJSON.a";
+			path = libRestKitJSONParserNXJSON.a;
+			remoteRef = C15FF7E313E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7E613E82C70001B0601 /* libRestKitJSONParserYAJL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitJSONParserYAJL.a;
+			remoteRef = C15FF7E513E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7E813E82C70001B0601 /* libRestKitJSONParserSBJSON.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitJSONParserSBJSON.a;
+			remoteRef = C15FF7E713E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7EA13E82C70001B0601 /* libRestKitJSONParserJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitJSONParserJSONKit.a;
+			remoteRef = C15FF7E913E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7EC13E82C70001B0601 /* libRestKitXMLParserLibxml.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitXMLParserLibxml.a;
+			remoteRef = C15FF7EB13E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7EE13E82C70001B0601 /* libRestKitCoreData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitCoreData.a;
+			remoteRef = C15FF7ED13E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7F013E82C70001B0601 /* libRestKitThree20.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKitThree20.a;
+			remoteRef = C15FF7EF13E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15FF7F213E82C70001B0601 /* UISpec.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UISpec.app;
+			remoteRef = C15FF7F113E82C70001B0601 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C18D5E5513E8197300B7649A /* Resources */ = {
@@ -261,6 +488,7 @@
 				C18D5E6813E8197300B7649A /* main.m in Sources */,
 				C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */,
 				C18D5E7213E8197300B7649A /* Kurzovni_ListekViewController.m in Sources */,
+				C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +503,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C15FF7F513E84D39001B0601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = C15FF7F413E84D39001B0601 /* PBXContainerItemProxy */;
+		};
 		C18D5E7F13E8197300B7649A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C18D5E5613E8197300B7649A /* Kurzovni Listek */;
@@ -330,7 +563,14 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_MAP_FILE_PATH = "\"$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -348,8 +588,15 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_MAP_FILE_PATH = "\"$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -430,6 +677,7 @@
 				C18D5E8E13E8197300B7649A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C18D5E8F13E8197300B7649A /* Build configuration list for PBXNativeTarget "Kurzovni ListekTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +686,7 @@
 				C18D5E9113E8197300B7649A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 
-@interface Kurzovni_ListekViewController : UIViewController
+
+@interface Kurzovni_ListekViewController : UIViewController <RKRequestDelegate, UITableViewDataSource>
+{
+    UITableView *tableView;
+}
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
