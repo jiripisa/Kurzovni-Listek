@@ -11,6 +11,11 @@
 @implementation ERTableViewCell
 
 @synthesize currencyLabel;
+@synthesize saleValutaLabel;
+@synthesize saleDevizaLabel;
+@synthesize purchaseValutaLabel;
+@synthesize purchaseDevizaLabel;
+@synthesize middleLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

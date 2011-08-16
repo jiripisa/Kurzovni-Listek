@@ -32,6 +32,8 @@
 		C18D5E8713E8197300B7649A /* Kurzovni_ListekTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */; };
 		C18D5E8913E8197300B7649A /* Kurzovni_ListekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */; };
 		C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C19E260713F0232D00EFDC6F /* ERTableViewCell.m */; };
+		C1CA66E513FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */; };
+		C1CA66E713FB143900F64966 /* Raiffeisen-Bank-logo_57px.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekTests.m; sourceTree = "<group>"; };
 		C19E260613F0232D00EFDC6F /* ERTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERTableViewCell.h; sourceTree = "<group>"; };
 		C19E260713F0232D00EFDC6F /* ERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERTableViewCell.m; sourceTree = "<group>"; };
+		C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Raiffeisen-Bank-logo_114px.png"; path = "Images/Raiffeisen-Bank-logo_114px.png"; sourceTree = "<group>"; };
+		C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Raiffeisen-Bank-logo_57px.png"; path = "Images/Raiffeisen-Bank-logo_57px.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,7 @@
 		C18D5E6213E8197300B7649A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C1CA66E313FB0ED200F64966 /* Images */,
 				C18D5E6313E8197300B7649A /* Kurzovni Listek-Info.plist */,
 				C18D5E6413E8197300B7649A /* InfoPlist.strings */,
 				C18D5E6713E8197300B7649A /* main.m */,
@@ -287,6 +292,15 @@
 				C18D5E8313E8197300B7649A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1CA66E313FB0ED200F64966 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */,
+				C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +464,8 @@
 			files = (
 				C18D5E6613E8197300B7649A /* InfoPlist.strings in Resources */,
 				C18D5E6F13E8197300B7649A /* MainStoryboard.storyboard in Resources */,
+				C1CA66E513FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png in Resources */,
+				C1CA66E713FB143900F64966 /* Raiffeisen-Bank-logo_57px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

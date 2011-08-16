@@ -11,8 +11,18 @@
 @interface ERTableViewCell : UITableViewCell {
  
     UILabel* currencyLabel;
+    UILabel* saleValutaLabel;
+    UILabel* saleDevizaLabel;
+    UILabel* purchaseValutaLabel;
+    UILabel* purchaseDevizaLabel;
+    UILabel* middleLabel;
 }
 
 @property (nonatomic, strong) IBOutlet UILabel* currencyLabel;
+@property (nonatomic, strong) IBOutlet UILabel* saleValutaLabel;
+@property (nonatomic, strong) IBOutlet UILabel* saleDevizaLabel;
+@property (nonatomic, strong) IBOutlet UILabel* purchaseValutaLabel;
+@property (nonatomic, strong) IBOutlet UILabel* purchaseDevizaLabel;
+@property (nonatomic, strong) IBOutlet UILabel* middleLabel;
 
 @end

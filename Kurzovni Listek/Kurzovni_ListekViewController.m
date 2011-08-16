@@ -16,6 +16,11 @@
 - (void) loadExchangeRates;
 - (void) refresh;
 - (NSString*) getCurrency:(NSInteger) index;
+- (NSString*) getSaleValuta:(NSInteger) index;
+- (NSString*) getPurchaseValuta:(NSInteger) index;
+- (NSString*) getSaleDeviza:(NSInteger) index;
+- (NSString*) getPurchaseDeviza:(NSInteger) index;
+- (NSString*) getMiddle:(NSInteger) index;
 @end
 
 @implementation Kurzovni_ListekViewController
@@ -33,6 +38,7 @@ RKXMLParserLibXML* xmlParser;
 - (void) awakeFromNib
 {
     xmlParser = [RKXMLParserLibXML new];
+    [self loadExchangeRates];
 }
 
 #pragma mark - View lifecycle
@@ -40,14 +46,11 @@ RKXMLParserLibXML* xmlParser;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self loadExchangeRates];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -77,40 +80,19 @@ RKXMLParserLibXML* xmlParser;
 }
 
 
-void describeDictionary (NSDictionary *dict)
-{ 
-    NSArray *keys;
-    int i, count;
-    id key, value;
-    
-    keys = [dict allKeys];
-    count = [keys count];
-    for (i = 0; i < count; i++)
-    {
-        key = [keys objectAtIndex: i];
-        value = [dict objectForKey: key];
-        //NSLog (@"Key: %@ for value: %@", key, value);
-        NSLog (@"Key: %@", key);
-    }
-}
-
 - (void) loadExchangeRates
 {
-//    RKClient* client = [RKClient clientWithBaseURL:@"http://62.168.6.14"];
-//    RKClient* client = [RKClient clientWithBaseURL:@"http://rb.cz"];
-    RKClient* client = [RKClient clientWithBaseURL:@"http://127.0.0.1"];
-//    [client get:@"/views/components/rates/ratesXML.jsp?day=3&month=7&year=2011" delegate:self];
-    [client get:@"/~jpisa/rest/currency_rates.xml" delegate:self];
+    RKClient* client = [RKClient clientWithBaseURL:@"http://rb.cz"];
+//    RKClient* client = [RKClient clientWithBaseURL:@"http://127.0.0.1"];
+    [client get:@"/views/components/rates/ratesXML.jsp" delegate:self];
+//    [client get:@"/~jpisa/rest/currency_rates.xml" delegate:self];
 }
 
 - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {  
     exchangeRates = nil;
-    NSLog(@"Load Exchange Rates");
     if ([request isGET]) {  
         if ([response isOK]) {  
-            //NSLog(@"%@", [response bodyAsString]);
             exchangeRates = [xmlParser objectFromString:[response bodyAsString] error: nil];
-            NSLog(@"Object >> %@", [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"]);
         }  
     }
     [self refresh];
@@ -124,9 +106,9 @@ void describeDictionary (NSDictionary *dict)
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (nil != exchangeRates) {
-        NSArray* erArray = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
-        NSLog(@"Pocet: %i", [erArray count]);
-        return [erArray count];
+        int count = [[[[[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"] objectAtIndex:0]valueForKey:@"currency"] count] ;
+        
+        return count;
     }
     return 0;
 }
@@ -135,6 +117,11 @@ void describeDictionary (NSDictionary *dict)
 {
     ERTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"erCell"];
     [cell.currencyLabel setText:[self getCurrency:[indexPath indexAtPosition:1]]];
+    [cell.saleDevizaLabel setText:[self getSaleDeviza:[indexPath indexAtPosition:1]]];
+    [cell.saleValutaLabel setText:[self getSaleValuta:[indexPath indexAtPosition:1]]];
+    [cell.purchaseDevizaLabel setText:[self getPurchaseDeviza:[indexPath indexAtPosition:1]]];
+    [cell.purchaseValutaLabel setText:[self getPurchaseValuta:[indexPath indexAtPosition:1]]];
+    [cell.middleLabel setText:[self getMiddle:[indexPath indexAtPosition:1]]];
     return cell;
 }
 
@@ -142,10 +129,48 @@ void describeDictionary (NSDictionary *dict)
 - (NSString*) getCurrency:(NSInteger) index
 {
     NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
-    NSDictionary* _first_er = [_exchange_rates objectAtIndex:index];
-    NSString* name = [_first_er valueForKey:@"name"];
-    //describeDictionary(_first_er);
-    NSLog(@"****** %i", index);
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:0];
+    NSString* name = [[_first_er valueForKey:@"name"] objectAtIndex:index];
+    return name;
+}
+
+- (NSString*) getSaleValuta:(NSInteger) index
+{
+    NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:0];
+    NSString* name = [[_first_er valueForKey:@"rate"] objectAtIndex:index];
+    return name;
+}
+
+- (NSString*) getPurchaseValuta:(NSInteger) index
+{
+    NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:1];
+    NSString* name = [[_first_er valueForKey:@"rate"] objectAtIndex:index];
+    return name;
+}
+
+- (NSString*) getSaleDeviza:(NSInteger) index
+{
+    NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:2];
+    NSString* name = [[_first_er valueForKey:@"rate"] objectAtIndex:index];
+    return name;
+}
+
+- (NSString*) getPurchaseDeviza:(NSInteger) index
+{
+    NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:3];
+    NSString* name = [[_first_er valueForKey:@"rate"] objectAtIndex:index];
+    return name;
+}
+
+- (NSString*) getMiddle:(NSInteger) index
+{
+    NSArray* _exchange_rates = [[exchangeRates valueForKey:@"exchange_rates"] valueForKey:@"exchange_rate"];
+    NSDictionary* _first_er = [_exchange_rates objectAtIndex:4];
+    NSString* name = [[_first_er valueForKey:@"rate"] objectAtIndex:index];
     return name;
 }
 
