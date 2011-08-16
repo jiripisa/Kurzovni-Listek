@@ -38,6 +38,7 @@ RKXMLParserLibXML* xmlParser;
 - (void) awakeFromNib
 {
     xmlParser = [RKXMLParserLibXML new];
+    [tableView setHidden:TRUE];
     [self loadExchangeRates];
 }
 
@@ -93,6 +94,7 @@ RKXMLParserLibXML* xmlParser;
     if ([request isGET]) {  
         if ([response isOK]) {  
             exchangeRates = [xmlParser objectFromString:[response bodyAsString] error: nil];
+            [tableView setHidden:FALSE];
         }  
     }
     [self refresh];
