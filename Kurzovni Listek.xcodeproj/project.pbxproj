@@ -23,7 +23,7 @@
 		C18D5E6813E8197300B7649A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E6713E8197300B7649A /* main.m */; };
 		C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */; };
 		C18D5E6F13E8197300B7649A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */; };
-		C18D5E7213E8197300B7649A /* Kurzovni_ListekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */; };
+		C18D5E7213E8197300B7649A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18D5E7113E8197300B7649A /* MainViewController.m */; };
 		C18D5E7A13E8197300B7649A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E7913E8197300B7649A /* SenTestingKit.framework */; };
 		C18D5E7B13E8197300B7649A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5B13E8197300B7649A /* UIKit.framework */; };
 		C18D5E7C13E8197300B7649A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18D5E5D13E8197300B7649A /* Foundation.framework */; };
@@ -147,8 +147,8 @@
 		C18D5E6A13E8197300B7649A /* Kurzovni_ListekAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekAppDelegate.h; sourceTree = "<group>"; };
 		C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekAppDelegate.m; sourceTree = "<group>"; };
 		C18D5E6E13E8197300B7649A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C18D5E7013E8197300B7649A /* Kurzovni_ListekViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kurzovni_ListekViewController.h; sourceTree = "<group>"; };
-		C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kurzovni_ListekViewController.m; sourceTree = "<group>"; };
+		C18D5E7013E8197300B7649A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C18D5E7113E8197300B7649A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C18D5E7813E8197300B7649A /* Kurzovni ListekTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kurzovni ListekTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18D5E7913E8197300B7649A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C18D5E8213E8197300B7649A /* Kurzovni ListekTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kurzovni ListekTests-Info.plist"; sourceTree = "<group>"; };
@@ -254,8 +254,8 @@
 				C18D5E6A13E8197300B7649A /* Kurzovni_ListekAppDelegate.h */,
 				C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */,
 				C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */,
-				C18D5E7013E8197300B7649A /* Kurzovni_ListekViewController.h */,
-				C18D5E7113E8197300B7649A /* Kurzovni_ListekViewController.m */,
+				C18D5E7013E8197300B7649A /* MainViewController.h */,
+				C18D5E7113E8197300B7649A /* MainViewController.m */,
 				C19E260613F0232D00EFDC6F /* ERTableViewCell.h */,
 				C19E260713F0232D00EFDC6F /* ERTableViewCell.m */,
 				C18D5E6213E8197300B7649A /* Supporting Files */,
@@ -503,7 +503,7 @@
 			files = (
 				C18D5E6813E8197300B7649A /* main.m in Sources */,
 				C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */,
-				C18D5E7213E8197300B7649A /* Kurzovni_ListekViewController.m in Sources */,
+				C18D5E7213E8197300B7649A /* MainViewController.m in Sources */,
 				C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

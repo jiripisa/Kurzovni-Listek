@@ -10,7 +10,7 @@
 #import <RestKit/RestKit.h>
 
 
-@interface Kurzovni_ListekViewController : UIViewController <RKRequestDelegate, UITableViewDataSource>
+@interface MainViewController : UIViewController <RKRequestDelegate, UITableViewDataSource>
 {
     UITableView *tableView;
 }

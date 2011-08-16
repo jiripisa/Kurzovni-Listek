@@ -6,13 +6,13 @@
 //  Copyright 2011 TopMonks AG. All rights reserved.
 //
 
-#import "Kurzovni_ListekViewController.h"
+#import "MainViewController.h"
 #import <RestKit/RestKit.h>
 #import "ERTableViewCell.h"
 #import <RestKit/Support/RKParser.h>
 #import <RestKit/Support/XML/LibXML/RKXMLParserLibXML.h>
 
-@interface Kurzovni_ListekViewController ()
+@interface MainViewController ()
 - (void) loadExchangeRates;
 - (void) refresh;
 - (NSString*) getCurrency:(NSInteger) index;
@@ -23,7 +23,7 @@
 - (NSString*) getMiddle:(NSInteger) index;
 @end
 
-@implementation Kurzovni_ListekViewController
+@implementation MainViewController
 
 @synthesize tableView;
 
