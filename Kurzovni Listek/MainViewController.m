@@ -118,12 +118,18 @@ RKXMLParserLibXML* xmlParser;
 - (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ERTableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"erCell"];
-    [cell.currencyLabel setText:[self getCurrency:[indexPath indexAtPosition:1]]];
+    
+    NSString* currency = [self getCurrency:[indexPath indexAtPosition:1]];
+    
+    [cell.currencyLabel setText:currency];
     [cell.saleDevizaLabel setText:[self getSaleDeviza:[indexPath indexAtPosition:1]]];
     [cell.saleValutaLabel setText:[self getSaleValuta:[indexPath indexAtPosition:1]]];
     [cell.purchaseDevizaLabel setText:[self getPurchaseDeviza:[indexPath indexAtPosition:1]]];
     [cell.purchaseValutaLabel setText:[self getPurchaseValuta:[indexPath indexAtPosition:1]]];
     [cell.middleLabel setText:[self getMiddle:[indexPath indexAtPosition:1]]];
+    
+    UIImage *image = [UIImage imageNamed: [currency stringByAppendingString: @".gif"]];
+    [cell.flagView setImage: image];
     return cell;
 }
 

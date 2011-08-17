@@ -16,6 +16,7 @@
 @synthesize purchaseValutaLabel;
 @synthesize purchaseDevizaLabel;
 @synthesize middleLabel;
+@synthesize flagView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

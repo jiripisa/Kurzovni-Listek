@@ -16,6 +16,7 @@
     UILabel* purchaseValutaLabel;
     UILabel* purchaseDevizaLabel;
     UILabel* middleLabel;
+    UIImageView* flagView;
 }
 
 @property (nonatomic, strong) IBOutlet UILabel* currencyLabel;
@@ -24,5 +25,6 @@
 @property (nonatomic, strong) IBOutlet UILabel* purchaseValutaLabel;
 @property (nonatomic, strong) IBOutlet UILabel* purchaseDevizaLabel;
 @property (nonatomic, strong) IBOutlet UILabel* middleLabel;
+@property (nonatomic, strong) IBOutlet UIImageView* flagView;
 
 @end

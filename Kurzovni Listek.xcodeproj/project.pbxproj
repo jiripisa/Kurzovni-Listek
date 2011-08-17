@@ -34,6 +34,23 @@
 		C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C19E260713F0232D00EFDC6F /* ERTableViewCell.m */; };
 		C1CA66E513FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */; };
 		C1CA66E713FB143900F64966 /* Raiffeisen-Bank-logo_57px.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */; };
+		C1CA670013FB231300F64966 /* AUD.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66EF13FB231300F64966 /* AUD.gif */; };
+		C1CA670113FB231300F64966 /* CAD.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F013FB231300F64966 /* CAD.gif */; };
+		C1CA670213FB231300F64966 /* CHF.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F113FB231300F64966 /* CHF.gif */; };
+		C1CA670313FB231300F64966 /* DKK.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F213FB231300F64966 /* DKK.gif */; };
+		C1CA670413FB231300F64966 /* EUR.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F313FB231300F64966 /* EUR.gif */; };
+		C1CA670513FB231300F64966 /* GBP.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F413FB231300F64966 /* GBP.gif */; };
+		C1CA670613FB231300F64966 /* HRK.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F513FB231300F64966 /* HRK.gif */; };
+		C1CA670713FB231300F64966 /* HUF.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F613FB231300F64966 /* HUF.gif */; };
+		C1CA670813FB231300F64966 /* JPY.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F713FB231300F64966 /* JPY.gif */; };
+		C1CA670913FB231300F64966 /* NOK.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F813FB231300F64966 /* NOK.gif */; };
+		C1CA670A13FB231300F64966 /* NZD.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66F913FB231300F64966 /* NZD.gif */; };
+		C1CA670B13FB231300F64966 /* PLN.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FA13FB231300F64966 /* PLN.gif */; };
+		C1CA670C13FB231300F64966 /* RON.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FB13FB231300F64966 /* RON.gif */; };
+		C1CA670D13FB231300F64966 /* RUB.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FC13FB231300F64966 /* RUB.gif */; };
+		C1CA670E13FB231300F64966 /* SEK.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FD13FB231300F64966 /* SEK.gif */; };
+		C1CA670F13FB231300F64966 /* TRY.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FE13FB231300F64966 /* TRY.gif */; };
+		C1CA671013FB231300F64966 /* USD.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FF13FB231300F64966 /* USD.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +176,23 @@
 		C19E260713F0232D00EFDC6F /* ERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERTableViewCell.m; sourceTree = "<group>"; };
 		C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Raiffeisen-Bank-logo_114px.png"; path = "Images/Raiffeisen-Bank-logo_114px.png"; sourceTree = "<group>"; };
 		C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Raiffeisen-Bank-logo_57px.png"; path = "Images/Raiffeisen-Bank-logo_57px.png"; sourceTree = "<group>"; };
+		C1CA66EF13FB231300F64966 /* AUD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = AUD.gif; path = Images/Flags/AUD.gif; sourceTree = "<group>"; };
+		C1CA66F013FB231300F64966 /* CAD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = CAD.gif; path = Images/Flags/CAD.gif; sourceTree = "<group>"; };
+		C1CA66F113FB231300F64966 /* CHF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = CHF.gif; path = Images/Flags/CHF.gif; sourceTree = "<group>"; };
+		C1CA66F213FB231300F64966 /* DKK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = DKK.gif; path = Images/Flags/DKK.gif; sourceTree = "<group>"; };
+		C1CA66F313FB231300F64966 /* EUR.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = EUR.gif; path = Images/Flags/EUR.gif; sourceTree = "<group>"; };
+		C1CA66F413FB231300F64966 /* GBP.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = GBP.gif; path = Images/Flags/GBP.gif; sourceTree = "<group>"; };
+		C1CA66F513FB231300F64966 /* HRK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = HRK.gif; path = Images/Flags/HRK.gif; sourceTree = "<group>"; };
+		C1CA66F613FB231300F64966 /* HUF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = HUF.gif; path = Images/Flags/HUF.gif; sourceTree = "<group>"; };
+		C1CA66F713FB231300F64966 /* JPY.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = JPY.gif; path = Images/Flags/JPY.gif; sourceTree = "<group>"; };
+		C1CA66F813FB231300F64966 /* NOK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = NOK.gif; path = Images/Flags/NOK.gif; sourceTree = "<group>"; };
+		C1CA66F913FB231300F64966 /* NZD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = NZD.gif; path = Images/Flags/NZD.gif; sourceTree = "<group>"; };
+		C1CA66FA13FB231300F64966 /* PLN.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = PLN.gif; path = Images/Flags/PLN.gif; sourceTree = "<group>"; };
+		C1CA66FB13FB231300F64966 /* RON.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = RON.gif; path = Images/Flags/RON.gif; sourceTree = "<group>"; };
+		C1CA66FC13FB231300F64966 /* RUB.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = RUB.gif; path = Images/Flags/RUB.gif; sourceTree = "<group>"; };
+		C1CA66FD13FB231300F64966 /* SEK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = SEK.gif; path = Images/Flags/SEK.gif; sourceTree = "<group>"; };
+		C1CA66FE13FB231300F64966 /* TRY.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = TRY.gif; path = Images/Flags/TRY.gif; sourceTree = "<group>"; };
+		C1CA66FF13FB231300F64966 /* USD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = USD.gif; path = Images/Flags/USD.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,10 +331,35 @@
 		C1CA66E313FB0ED200F64966 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C1CA66E813FB1F9B00F64966 /* Flags */,
 				C1CA66E613FB143900F64966 /* Raiffeisen-Bank-logo_57px.png */,
 				C1CA66E413FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C1CA66E813FB1F9B00F64966 /* Flags */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA66EF13FB231300F64966 /* AUD.gif */,
+				C1CA66F013FB231300F64966 /* CAD.gif */,
+				C1CA66F113FB231300F64966 /* CHF.gif */,
+				C1CA66F213FB231300F64966 /* DKK.gif */,
+				C1CA66F313FB231300F64966 /* EUR.gif */,
+				C1CA66F413FB231300F64966 /* GBP.gif */,
+				C1CA66F513FB231300F64966 /* HRK.gif */,
+				C1CA66F613FB231300F64966 /* HUF.gif */,
+				C1CA66F713FB231300F64966 /* JPY.gif */,
+				C1CA66F813FB231300F64966 /* NOK.gif */,
+				C1CA66F913FB231300F64966 /* NZD.gif */,
+				C1CA66FA13FB231300F64966 /* PLN.gif */,
+				C1CA66FB13FB231300F64966 /* RON.gif */,
+				C1CA66FC13FB231300F64966 /* RUB.gif */,
+				C1CA66FD13FB231300F64966 /* SEK.gif */,
+				C1CA66FE13FB231300F64966 /* TRY.gif */,
+				C1CA66FF13FB231300F64966 /* USD.gif */,
+			);
+			name = Flags;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +525,23 @@
 				C18D5E6F13E8197300B7649A /* MainStoryboard.storyboard in Resources */,
 				C1CA66E513FB142B00F64966 /* Raiffeisen-Bank-logo_114px.png in Resources */,
 				C1CA66E713FB143900F64966 /* Raiffeisen-Bank-logo_57px.png in Resources */,
+				C1CA670013FB231300F64966 /* AUD.gif in Resources */,
+				C1CA670113FB231300F64966 /* CAD.gif in Resources */,
+				C1CA670213FB231300F64966 /* CHF.gif in Resources */,
+				C1CA670313FB231300F64966 /* DKK.gif in Resources */,
+				C1CA670413FB231300F64966 /* EUR.gif in Resources */,
+				C1CA670513FB231300F64966 /* GBP.gif in Resources */,
+				C1CA670613FB231300F64966 /* HRK.gif in Resources */,
+				C1CA670713FB231300F64966 /* HUF.gif in Resources */,
+				C1CA670813FB231300F64966 /* JPY.gif in Resources */,
+				C1CA670913FB231300F64966 /* NOK.gif in Resources */,
+				C1CA670A13FB231300F64966 /* NZD.gif in Resources */,
+				C1CA670B13FB231300F64966 /* PLN.gif in Resources */,
+				C1CA670C13FB231300F64966 /* RON.gif in Resources */,
+				C1CA670D13FB231300F64966 /* RUB.gif in Resources */,
+				C1CA670E13FB231300F64966 /* SEK.gif in Resources */,
+				C1CA670F13FB231300F64966 /* TRY.gif in Resources */,
+				C1CA671013FB231300F64966 /* USD.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
