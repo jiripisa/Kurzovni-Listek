@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ExchangeRate : NSObject
+@interface ExchangeRate : NSObject {
+    NSString* currencyName;
+    int quota;
+    double devizaSale;
+    double devizaPurchase;
+    double valutaSale;
+    double valutaPurchase;
+    double middle;
+}
+
+@property(atomic, copy) NSString* currencyName;
+@property int quota;
+@property double devizaSale;
+@property double devizaPurchase;
+@property double valutaSale;
+@property double valutaPurchase;
+@property double middle;
 
 @end

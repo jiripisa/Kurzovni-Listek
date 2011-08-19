@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C14AA14E13FC086500F6063F /* currency_rates.xml in Resources */ = {isa = PBXBuildFile; fileRef = C14AA14D13FC086400F6063F /* currency_rates.xml */; };
 		C15FF7F613E84E06001B0601 /* libRestKitJSONParserJSONKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7EA13E82C70001B0601 /* libRestKitJSONParserJSONKit.a */; };
 		C15FF7F713E84E06001B0601 /* libRestKitNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7DE13E82C70001B0601 /* libRestKitNetwork.a */; };
 		C15FF7F813E84E06001B0601 /* libRestKitObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FF7E013E82C70001B0601 /* libRestKitObjectMapping.a */; };
@@ -51,6 +52,8 @@
 		C1CA670E13FB231300F64966 /* SEK.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FD13FB231300F64966 /* SEK.gif */; };
 		C1CA670F13FB231300F64966 /* TRY.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FE13FB231300F64966 /* TRY.gif */; };
 		C1CA671013FB231300F64966 /* USD.gif in Resources */ = {isa = PBXBuildFile; fileRef = C1CA66FF13FB231300F64966 /* USD.gif */; };
+		C1E63FA413FBC41B00F82400 /* ExchangeRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E63FA313FBC41B00F82400 /* ExchangeRate.m */; };
+		C1E63FA713FBCC4700F82400 /* TableOfExchanges.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E63FA613FBCC4700F82400 /* TableOfExchanges.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C14AA14D13FC086400F6063F /* currency_rates.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = currency_rates.xml; path = Resources/currency_rates.xml; sourceTree = "<group>"; };
 		C15FF7C913E82C70001B0601 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		C15FF7FB13E84E06001B0601 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C15FF7FC13E84E06001B0601 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -193,6 +197,10 @@
 		C1CA66FD13FB231300F64966 /* SEK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = SEK.gif; path = Images/Flags/SEK.gif; sourceTree = "<group>"; };
 		C1CA66FE13FB231300F64966 /* TRY.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = TRY.gif; path = Images/Flags/TRY.gif; sourceTree = "<group>"; };
 		C1CA66FF13FB231300F64966 /* USD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = USD.gif; path = Images/Flags/USD.gif; sourceTree = "<group>"; };
+		C1E63FA213FBC41B00F82400 /* ExchangeRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeRate.h; sourceTree = "<group>"; };
+		C1E63FA313FBC41B00F82400 /* ExchangeRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeRate.m; sourceTree = "<group>"; };
+		C1E63FA513FBCC4700F82400 /* TableOfExchanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableOfExchanges.h; sourceTree = "<group>"; };
+		C1E63FA613FBCC4700F82400 /* TableOfExchanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableOfExchanges.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +237,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C14AA14F13FC087300F6063F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C14AA14D13FC086400F6063F /* currency_rates.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		C15FF7CA13E82C70001B0601 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +301,10 @@
 		C18D5E6113E8197300B7649A /* Kurzovni Listek */ = {
 			isa = PBXGroup;
 			children = (
+				C1E63FA213FBC41B00F82400 /* ExchangeRate.h */,
+				C1E63FA313FBC41B00F82400 /* ExchangeRate.m */,
+				C1E63FA513FBCC4700F82400 /* TableOfExchanges.h */,
+				C1E63FA613FBCC4700F82400 /* TableOfExchanges.m */,
 				C18D5E6A13E8197300B7649A /* Kurzovni_ListekAppDelegate.h */,
 				C18D5E6B13E8197300B7649A /* Kurzovni_ListekAppDelegate.m */,
 				C18D5E6D13E8197300B7649A /* MainStoryboard.storyboard */,
@@ -312,6 +332,7 @@
 		C18D5E8013E8197300B7649A /* Kurzovni ListekTests */ = {
 			isa = PBXGroup;
 			children = (
+				C14AA14F13FC087300F6063F /* Resources */,
 				C18D5E8613E8197300B7649A /* Kurzovni_ListekTests.h */,
 				C18D5E8813E8197300B7649A /* Kurzovni_ListekTests.m */,
 				C18D5E8113E8197300B7649A /* Supporting Files */,
@@ -551,6 +572,7 @@
 			files = (
 				C18D5E8513E8197300B7649A /* InfoPlist.strings in Resources */,
 				C18D5E8713E8197300B7649A /* Kurzovni_ListekTests.h in Resources */,
+				C14AA14E13FC086500F6063F /* currency_rates.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +603,8 @@
 				C18D5E6C13E8197300B7649A /* Kurzovni_ListekAppDelegate.m in Sources */,
 				C18D5E7213E8197300B7649A /* MainViewController.m in Sources */,
 				C19E260813F0232D00EFDC6F /* ERTableViewCell.m in Sources */,
+				C1E63FA413FBC41B00F82400 /* ExchangeRate.m in Sources */,
+				C1E63FA713FBCC4700F82400 /* TableOfExchanges.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,8 +745,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kurzovni Listek.app/Kurzovni Listek";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";
@@ -738,8 +762,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kurzovni Listek.app/Kurzovni Listek";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kurzovni Listek/Kurzovni Listek-Prefix.pch";

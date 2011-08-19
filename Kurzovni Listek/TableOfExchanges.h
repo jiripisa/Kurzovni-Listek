@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ExchangeRate.h"
 
-@interface TableOfExchanges : NSObject
+@interface TableOfExchanges : NSObject {
+    NSDate* validFrom;
+}
+
+@property(atomic, copy) NSDate* validFrom;
+
++ (TableOfExchanges*) loadExchangeRates: NSDictionary;
+
+- (int) getCountOfCurrencies;
+- (ExchangeRate*) getExchangeRate:(int) index;
 
 @end

@@ -10,4 +10,12 @@
 
 @implementation ExchangeRate
 
+@synthesize currencyName;
+@synthesize quota;
+@synthesize devizaSale;
+@synthesize devizaPurchase;
+@synthesize valutaSale;
+@synthesize valutaPurchase;
+@synthesize middle;
+
 @end
